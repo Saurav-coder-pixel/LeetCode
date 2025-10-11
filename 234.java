@@ -34,8 +34,8 @@ class Solution {
     private ListNode duplicateList(ListNode head) {
         if (head == null) return null;
         
-        ListNode newHead = new ListNode(head.val);
-        ListNode original = head.next;
+        ListNode newHead = new ListNode(0);
+        ListNode original = head;
         ListNode copy = newHead;
         
         while (original != null) {
