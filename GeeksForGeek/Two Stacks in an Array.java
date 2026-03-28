@@ -1,4 +1,57 @@
 class twoStacks {
+    private Stack<Integer> stack1;
+    private Stack<Integer> stack2;
+    
+    twoStacks() {
+        stack1= new Stack<>();
+        stack2= new Stack<>();
+    }
+
+    // Function to push an integer into the stack1.
+    void push1(int x) {
+        stack1.push(x);
+    }
+
+    // Function to push an integer into the stack2.
+    void push2(int x) {
+        stack2.push(x);
+    }
+
+    // Function to remove an element from top of the stack1.
+        
+    int pop1() {
+        if(stack1.isEmpty()){
+           return -1 ;
+        }else{
+            return stack1.pop();
+        }
+    }
+
+        
+    // Function to remove an element from top of the stack2.
+    int pop2() {
+        if(stack2.isEmpty()){
+           return -1 ;
+        }else{
+            return stack2.pop();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class twoStacks {
     int size;
     int arr[];
     int top1, top2;
